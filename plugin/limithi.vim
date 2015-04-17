@@ -86,8 +86,8 @@ endfunction
 " Function: s:NoLimitHi() {{{2
 " Turn off highlighting of line limits
 function! s:NoLimitHi()
-    call matchdelete(g:ll_soft)
-    call matchdelete(g:ll_hard)
+    let _ = matchdelete(g:ll_soft)
+    let _ = matchdelete(g:ll_hard)
     let b:limithi = 0
 endfunction
 
